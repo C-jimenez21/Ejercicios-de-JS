@@ -1,0 +1,13 @@
+body{
+    background: rgb(30, 30, 34);
+    color:white
+}
+.logoCanal>img{
+    width: 100px;
+    border-radius: 50px;
+}
+.videosRelacionados>img{
+    width: 500px;
+    border-radius: 30px;
+    border:3px blanchedalmond;
+}
