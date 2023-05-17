@@ -2,16 +2,17 @@ const SEARCHBAR = document.getElementById("searchBar")
 
 //genera una url segun la busqueda del usuario en la caja de texto -- MEJORAR: Que admita busquedas con espacios
 const generateUrl = () => {
-	let urlModificada = 'https://youtube138.p.rapidapi.com/search/?q='+ SEARCHBAR.value +'&hl=en&gl=US'
+	let urlModificada = 'https://youtube138.p.rapidapi.com/search/?q='+ (SEARCHBAR.value).split(" ").join("%20") +'&hl=en&gl=US'
 	console.log(urlModificada)
 	return urlModificada
 }
+
 
 //const url = 'https://youtube138.p.rapidapi.com/search/?q=despacito&hl=en&gl=US';
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '9ac25ff21fmsha3f2fc4c1912150p1b2afbjsn822849bf5fe4',
+		'X-RapidAPI-Key': '2b845d4d08msha779bb254daf24ap18ee37jsn870fdfc4a2d9', //2b845d4d08msha779bb254daf24ap18ee37jsn870fdfc4a2d9
 		'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
 	}
 };
